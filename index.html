@@ -422,25 +422,40 @@
                 <form class="backdrop-labels"> 
                     
                     <label class="form-label">
-                        <span class="backdrop-list">Ім'я</span>
-                        <input type="text">
-                    </label>
+                        <span class="backdrop-list">Ім'я</span></label>
+                        <div>
+                            <input type="text" name="name" class="backdrop-input">
+                        <svg class="form-icon" width="12px" height="12px">
+                            <use href="./images/symbol-defs6.svg#icon-backdrop_name"></use>
+                        </svg> 
+                        </div>
+                    
                     <label class="form-label">
-                        <span class="backdrop-list">Телефон</span>
-                        <input type="tel">
-                    </label>
+                        <span class="backdrop-list">Телефон</span></label>
+                        <div>
+                            <input type="tel" name="phone" class="backdrop-input">
+                            <svg class="form-icon" width="12px" height="12px">
+                                <use href="./images/symbol-defs6.svg#icon-backdrop_phone"></use>
+                            </svg> 
+                        </div>
+                    
                     <label class="form-label">
-                        <span class="backdrop-list">Пошта</span>
-                        <input type="email">
-                    </label>
+                        <span class="backdrop-list">Пошта</span></label>
+                        <div>
+                            <input type="email" name="email" class="backdrop-input">
+                        <svg class="form-icon" width="12px" height="12px">
+                            <use href="./images/symbol-defs6.svg#icon-backdrop_mail"></use>
+                        </svg> 
+                        </div>
+                    
                     <label class="form-label">
                         <span class="backdrop-list">Коментар</span>
-                        <textarea placeholder="Введіть текст"> </textarea>
+                        <textarea name="comments"> </textarea>
                     </label>
                     <label>
                         <input type="checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
                     </label>
-                    <button class="link-footer " type="submit">Відправити</button>
+                    <button class="link-footer button-form" type="submit">Відправити</button>
                  </form>
             </div>
         </div>
