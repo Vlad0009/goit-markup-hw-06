@@ -420,41 +420,45 @@
             <div class="backdrop-form">
                 <p class="backdrop-title">Залиште свої дані, ми вам передзвонимо</p>
                 <form class="backdrop-labels"> 
-                    
-                    <label class="form-label">
-                        <span class="backdrop-list">Ім'я</span></label>
-                        <div>
-                            <input type="text" name="name" class="backdrop-input">
+                                            
+                    <div class="form-field">
+                        <input type="text" name="name" class="backdrop-input">
                         <svg class="form-icon" width="12px" height="12px">
                             <use href="./images/symbol-defs6.svg#icon-backdrop_name"></use>
                         </svg> 
-                        </div>
+                        <label class="form-label">Ім'я</label>
+                    </div>
                     
-                    <label class="form-label">
-                        <span class="backdrop-list">Телефон</span></label>
-                        <div>
-                            <input type="tel" name="phone" class="backdrop-input">
+                    <div class="form-field">
+                        <input type="tel" name="phone" class="backdrop-input">
                             <svg class="form-icon" width="12px" height="12px">
                                 <use href="./images/symbol-defs6.svg#icon-backdrop_phone"></use>
                             </svg> 
-                        </div>
+                        <label class="form-label">Телефон</label>
+                    </div>
                     
-                    <label class="form-label">
-                        <span class="backdrop-list">Пошта</span></label>
-                        <div>
-                            <input type="email" name="email" class="backdrop-input">
-                        <svg class="form-icon" width="12px" height="12px">
-                            <use href="./images/symbol-defs6.svg#icon-backdrop_mail"></use>
-                        </svg> 
-                        </div>
                     
-                    <label class="form-label">
-                        <span class="backdrop-list">Коментар</span>
-                        <textarea name="comments"> </textarea>
-                    </label>
-                    <label>
-                        <input type="checkbox">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
-                    </label>
+                    <div class="form-field">
+                        <input type="email" name="email" class="backdrop-input">
+                            <svg class="form-icon" width="12px" height="12px">
+                               <use href="./images/symbol-defs6.svg#icon-backdrop_mail"></use>
+                            </svg> 
+                        <label class="form-label">Пошта</label>
+                    </div>
+                    
+                    <div class="form-field">
+                        <textarea name="comments" class="backdrop-coments" placeholder="Введіть текст"></textarea>
+                        <label class="form-label">Коментар</label>
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label">
+                            <svg class="form-checkbox" width="12px" height="12px">
+                                <use href="./images/symbol-defs6.svg#icon-backdrop_checkerV"></use>
+                            </svg>
+                            <input type="checkbox" class="checkbox-input"><p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></P>
+                        </label>
+
+                    </div>
                     <button class="link-footer button-form" type="submit">Відправити</button>
                  </form>
             </div>
