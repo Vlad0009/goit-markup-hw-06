@@ -341,13 +341,11 @@ button {
     text-align: center;
 }
 
-input {
-    padding-left: 43px;
-}
+
 .backdrop {
     position: fixed;
     width: 100%;
-    height: 1024px;
+    height: 100%;
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.2);
@@ -362,19 +360,19 @@ input {
 .backdrop-form {
     display: flex;
     flex-direction: column;
-    padding: 40px;
     padding-top: 0px;
     position: absolute;
 }
 
 .backdrop-input {
+    outline: none;
     justify-items: center;
     cursor: pointer;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 40px;
-    width: 446px;
+    width: 100%;
 
 }
 
@@ -408,34 +406,46 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop-coments {
+    outline: none;
+    display: block;
     justify-items: center;
     cursor: pointer;
+    font-size: 12px;
+    padding: 12px 16px 12px 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 120px;
-    width: 446px;
+    width: 100%;
+}
+
+.backdrop-coments:focus,
+.backdrop-coments:hover {
+    border: 1px solid var(--primary-title-color);
 }
 
 
 .checkbox-input {
     position: absolute;
 appearance: none;
-justify-content: center;
-color: var(--primary-button-text);
+
 }
 
-.checkbox-input:checked + .form-label {
-color: var(--svg-clients-brd);
-border: 1px solid var(--primary-title-color);
+.checkbox-input:checked + .form-checkbox {
+border: var(--primary-title-color);
 background-color: var(--primary-title-color);
 }
 
+.checkbox-input:checked + .form-label {
+    color: var(--svg-clients-brd);
+    background-origin: var(--primary-title-color);
+    }
+
 .form-checkbox {
     position: absolute;
-    border: 1px solid var(--primary-text-color);
-    border-radius: 2px;
+    border-radius: 3px;
     cursor: pointer;
+    border: 2px solid var(--primary-text-color);
     background-color: var(--primary-background-color);
     top: 5px;
     margin-left: 12px;
@@ -485,7 +495,7 @@ margin-bottom: 30px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
+    padding: 40px;
     width: 528px;
     height: 581px;
     background-color: var(--primary-background-color);
@@ -495,8 +505,10 @@ margin-bottom: 30px;
 
 .close-button {
 cursor: pointer;
+position: absolute;
+top: 0;
+right: 0;
 margin: 8px;
-margin-left: 490px;
 width: 30px;
 height: 30px;
 display: flex;
@@ -526,7 +538,7 @@ margin-bottom: 28px;
 
 .form-label {
     position: absolute;
-    
+    user-select: none;
     top: 0;
     left: 0;
     transform: translateY(-100%);
@@ -1100,7 +1112,7 @@ width: 358px;
 height: 50px;
 left: 815px;
 margin-top: 0px;
-margin-right: 12px;
+
 padding: 15px 15px 15px 15px;
 background: #2F303A;
 color: var(--primary-button-text);
@@ -1109,7 +1121,11 @@ filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 font-size: 16px;
 line-height: 30px;
-transition: ;
+
+}
+
+.email-box {
+    margin-right: 12px;
 }
 
 .link-footer {
@@ -1135,7 +1151,21 @@ transition: ;
 justify-content: center;
 margin-top: 30px;
 margin-left: 124px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.button-form:hover,
+.button-form:focus {color: var(--header-bkg-title);
+    background-color: var(--header-btn-active);
+}
+
+.link-rule {
+    color: var(--primary-title-color);
+}
+    
+
+          
+
 
 .spam-sign {
     fill: var(--primary-background-color);

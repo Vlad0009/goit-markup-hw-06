@@ -391,7 +391,7 @@
                 <p class="footer-submit">Підпишіться на розсилку</p3>
                 <form class="">
                     <ul class="footer-box">
-                        <li>
+                        <li class="email-box">
                             <label>
                                 <input type="email" name="email" placeholder="E-mail" class="footer-form">
                             </label>
@@ -447,15 +447,17 @@
                     </div>
                     
                     <div class="form-field">
-                        <textarea name="comments" class="backdrop-coments" placeholder="Введіть текст"></textarea>
+                        <textarea name="comments" class="backdrop-coments" placeholder="Введіть текст" style="resize: none;"></textarea>
                         <label class="form-label">Коментар</label>
                     </div>
+
                     <div class="form-field">
                         <label class="form-label">
-                            <svg class="form-checkbox" width="12px" height="12px">
+                            <input type="checkbox" class="checkbox-input">
+                            <svg class="form-checkbox" width="16px" height="15px">
                                 <use href="./images/symbol-defs6.svg#icon-backdrop_checkerV"></use>
                             </svg>
-                            <input type="checkbox" class="checkbox-input"><p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></P>
+                            <p class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="" class="link-rule">Умови договору</a></P>
                         </label>
 
                     </div>
